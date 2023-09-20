@@ -1,8 +1,8 @@
-version: '3.8'
+version: '3'
 services:
   vprodb:
     build:
-    contex: ./Docker-files/db
+      contex: ./Docker-files/db
     image: eregbene/vprofiledb:V1
     container_name: vprodb 
     ports:
@@ -29,7 +29,7 @@ services:
 
   vproapp:
     build:
-    contex: ./Docker-files/app
+      contex: ./Docker-files/app
     image: eregbene/vprofileapp:V1
     container_name: vproapp 
     ports:
@@ -39,7 +39,7 @@ services:
 
   vproweb:
     build:
-    contex: ./Docker-files/web
+      contex: ./Docker-files/web
     image: eregbene/vprofileweb:V1 
     container_name: vproweb 
     ports:
